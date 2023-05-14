@@ -6,7 +6,7 @@ RUN pip install Pillow
 
 WORKDIR /usr/app/src
 
-COPY app ./
-COPY mnt ./
+COPY app /app
+COPY mnt /mnt
 
 CMD ["echo", "Docker is ready"]

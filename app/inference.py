@@ -106,7 +106,7 @@ class Program:
             if text.isalpha():
                 # if it's lower character then get it in uppercase
                 text = text.upper()
-            writer.writerow([ascii_symbol, text, file_name])
+            writer.writerow([ascii_symbol, file_name])
 
         # output results
         print(f.getvalue())
@@ -141,5 +141,5 @@ if __name__ == "__main__":
 
     args = parser.parse_args()
 
-    program = Program("Best_points.h5", args.input)
+    program = Program("/app/model.h5", args.input)
     program.run()
