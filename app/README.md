@@ -74,3 +74,32 @@ Also, I've decided to add another convolutional layer to increase the deepness o
  Results after training for 27 epochs
  Test accuracy: 0.886
  Validation accuracy: 0.879
+
+# USAGE GUIDE
+
+- open windows powershell in EMNIST_Recognition directory
+- ls command should show you this:
+![img.png](images/img.png)
+  
+- build docker image using `docker build -t YOURNAME .` command
+- run docker image via `docker run -it --rm YOURNAME python3 /app/inference.py --input /mnt/test_data/`
+
+### Pay attention
+There are already 3 samples in mnt/test_data folder, you can replace them with your images.
+If you want to specify your own directory, please replace line 10 in dockerfile via
+
+`COPY your_directory /your_directory` command
+
+When running docker image, replace /mnt/test_data with /your_directory
+
+### RUNNING script.py
+
+- copy data from EMNIST dataset ( balanced dataset )
+- install required libraries
+- run the script via python 
+
+# AUTHOR INFO
+Kriuchkovskyi Vladyslav
+
+kriuchkvskyi.vlad@gmail.com
+  
