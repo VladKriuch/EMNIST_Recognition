@@ -1,4 +1,5 @@
 # EMNIST_Recognition
+# MAIN README - app/README.md
 # structure
 
 - app - app folder as required in task
